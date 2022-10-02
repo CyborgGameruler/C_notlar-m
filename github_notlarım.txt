@@ -1,0 +1,29 @@
+->işlem yapılacak klasörde .git dosyası yoksa dizine git ve repoyu başlatma için "git init" komutunu gir.
+
+->git hesabı kaydetmek için git config user.email "emailadresizniz"
+
+->git status komutu mevcut reponun durumunu gösterir.projede değişiklik yapılmış ancak işlenmemiş veya işlenmiş değişikler görüntülenebilir.
+
+->git add . komutu değişen bütün dosyaları github'a gödermek üzere hazırlar.En sondaki nokta bütün dosyaları ifade eder.buraya dosya veya klasör ismi yazabilirsiniz.
+
+->git commit -m "commit mesajı"  bu komut ile,bir önceki aşamada hazırlanan değişikler,bir mesajla birlikte yereldeki (localhost)repoya kaydedilir.
+mesaj kısmı projedeki değişiklere açklayıcı olmalıdır.
+
+->git push origin [branch ismi] bu komut ile yerelde hazırlanıp kaydedilen değişikler,githubdaki repoya gönderilir.
+
+->git checkout -b [branc ismi] yeni branc oluşturma
+
+->git cheackout [brach ismi] belirtilen isimde branca geçiş yapar.
+
+echo "# C_notlar-m" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/CyborgGameruler/C_notlar-m.git
+git push -u origin main
+
+
+git config --list --show-origin ----> git durmunu gösterir
+
+git config --global http.sslVerify false 
